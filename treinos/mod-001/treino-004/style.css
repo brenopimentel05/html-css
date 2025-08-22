@@ -1,0 +1,11 @@
+button {
+    cursor: pointer ;
+}
+h2 {
+    background-color: rgb(255, 0, 0);
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    color: white;
+    width: 220px;
+    border: solid black 2px;
+}

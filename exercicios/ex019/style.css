@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* Em HTML: id em CSS: # (só pode um elemento)
+   Em HTML: class em CSS: . (pode mais de um elemento) */
+
+body {
+    background-color: #15cfcc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #023535;
+}
+
+h2 {
+    color: #013f3e;
+}
+
+p {
+    background-color: #015352;
+    color: #ffffff;
+    padding: 5px;
+}
+
+#principal {
+    background-color:#023535 ;
+    color: #ffff;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.basico {
+    text-align: right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #1f8300;
+}
+
+.intermediario {
+    text-align: right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#51ff00;
+}
+
+.avançado {
+text-align: right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ff0000;
+}

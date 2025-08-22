@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <hr>
+
+    <h2>Links externos</h2>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no Github</a></p>
+    <p>Você também pode acessar o <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">link do nosso canal no YouTube</a></p>
+    <p>Para criarmos um <strong>link/âncora</strong> utilizamos a tag &lt;a&gt; onde no parâmetro <mark>"href"</mark> devemos aplicar a URL do site desejado completa e usarmos os parâmetros <mark>"target= "_blank"</mark> e <mark>"rel= "external"</mark></p> para que possamos criar <mark>links externos</mark> (links que não se sobrepõem sobre esta página, a página principal, pois são outros links sem ligação com o site principal)
+
+    <h2>Links internos</h2>
+    <p>Siga agora para a <a href="pag002.html" target="_self" rel="next">segunda página</a> </p>
+    
+    <p>Siga também para a <a href="noticias/pag003.html" target="_self" rel="next">terceira página</a></p>
+
+    <p>Para que poossamos criar <mark>links internos</mark> basta aplicarmos a tag <mark>&lt;a&gt;</mark> da mesma forma que os links externos mas dessa vez no parâmetro <mark>"target"</mark> usamos o valor <mark>"_self"</mark> e no parâmetro <mark>"rel"</mark> usamos o valor <mark>"next"</mark> ou <mark>"prev"</mark></p>
+    
+    <p>Para criarmos páginas internas podemos criar outros arquivos .html dentro da própria pasta do documento principal ou criar uma nova pasta e dentro dela adicionar o novo arquivo .html, mas dessa forma é necessário que no parâmero "href" coloquemos o caminho certo utilizando <mark>CTRL + SPACE</mark> <br> 
+    Para alternarmos entre links internos caso ele esteja na mesma pasta que o documento principal basta usarmos os parâmetros <mark>"target"</mark> e <mark>"rel"</mark> corretamente mas caso o link esteja em pastas diferentes é necessário usarmos no <mark>"href"</mark> " <mark><strong>./</strong></mark> " caso o arquivo do link esteva na mesma pasta ou " <mark><strong>../</strong></mark> " caso o arquivo esteja fora da mesma pasta
+    </p>
+
+    <h2>Links para dowload</h2>
+    <p>Para criarmos um <mark>link para dowload</mark> basta adicionarmos o endereço do dowload no parâmetro <mark>"href"</mark> e adicionarmos os parâmetros <mark>"dowload"</mark> com o endereço do dowload e o parâmetro <mark>"type"</mark> para adicionarmos o valor do tipo de arquivo.</p>
+
+    <p><img src="Captura de tela 2025-04-30 205547.png" alt="Imagem de exemplo de code">
+    </p>
+
+    <p><li><a href="livro/10 - Ligações em toda parte - Copia.pdf" download="Ligações em toda parte - Copia.pdf" type="application/pdf">Baixe aqui o me livro em PDF</a></li></p>
+
+    <p><li><a href="livro/10 - Ligações em toda parte.zip" download="Ligações em toda parte.zip" type="application/zip">Baixe aqui o meu livro em .ZIP</a></li></p>
+</body>
+</html>
+

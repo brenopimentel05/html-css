@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em diferentes dispositivos ou simplesmente aumente e diminua o tamanho do seu navegado para
+        que veja o funcionamento da imagem dinâmica!</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem dinâmica">
+    </picture>
+    <p>Para criarmos imagens dinâmicas basta adicionarmos a tag <mark>&lt;img&gt;</mark> com a nossa imagem principal
+        dentro de uma tag <mark>&lt;picture&gt;</mark>, após isso basta adicionarmos as outras imagens em ordem
+        decrescente logo acima com os respectivos atributos: <br>
+        <mark
+            style="background-color: #9b9bff;">&lt;<code>source media="(max-width: ?)" srcset="?" type="image/?"&gt;</code></mark>.
+        <br>
+        E tudo isso dentro da tag <mark>&lt;picture&gt;</mark>.
+    </p>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios com HTML5.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.mp3" type="audio/ogg">
+        <source src="midia/guanacast-33.mp3" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio <a href="media/guanacast-33.mp3">Clique aqui para
+                baixar o arquivo MP3</a></p>
+    </audio>
+    <p>Para colocarmos áudios dentro de nossa página HTML utilizamos a tag <mark>&lt;audio&gt;</mark> seguindo de alguns
+        parâmetros: <br>
+        <mark
+            style="background-color: #9b9bff;"><code>&lt;audio <ins>preload</ins>="metadata" <ins>autoplay</ins> <ins>controls</ins> <ins>loop</ins>&gt;</code></mark>
+    </p>
+    <ul>
+        <li>preload=</li>
+        <ul>
+            <li><ins>metadata</ins>(Vai carregar apenas as informações do arquivo Ex: Tamanho, tempo, informações de
+                direito e etc.)</li>
+            <li><ins>none</ins>(Não carregará absolutamente nada até que o usuario clique no play.)</li>
+            <li><ins>auto</ins>(padrão)(Vai carregar o arquivo inteiro mesmo que o usuário não aperte no play.)</li>
+        </ul>
+        <li>controls(vai apresentar o player na tela. Necessário que esse atributo seja colocado dentro da tag
+            <mark>&lt;áudio&gt;</mark>.</li>
+        <li>autoplay(Vai iniciar a reprodução do áudio assim que a página for carregada.)</li>
+        <li>loop(Vai fazer com que o áudio se repita eternamente sempre que chegar ao fim.)</li>
+    </ul>
+    <p>Dentro da tag <mark>&lt;audio&gt;</mark>, adicionamos vários <mark>&lt;source&gt;</mark> com formatos diferentes do mesmo áudio. Coloque na parte de cima o seu formato favorito. Os demais só serão carregados caso o de cima falhe. caso todos falhem, criamos um paragrafo que permite o dowload do arquivo MP3 para ouvir no player padrão do dispositivo.</p>
+</body>
+</html>

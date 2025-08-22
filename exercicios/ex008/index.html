@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+        <h2>Código-fonte/Pré-formatação</h2>
+        <p>O comando <ins><code>document.getElemetById1</code></ins>("teste") é escrito em linguagem JavaScript</p>
+        <p>Usando a tag <mark>&lt;code&gt;</mark> o texto ficará com a mesma fonte do código</p>
+            <pre>
+                <code>        
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f' O número{num} é ÍMPAR')
+    print('Fim do programa')
+                </code>
+            </pre>
+        <p>Usando a tag <mark>&lt;pre&gt;</mark> o texto no site é representado da mesma maneira que ele é escrito no código</p>
+
+    <h2>Citações simples</h2>
+        <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>  
+        <p>Com a tag <mark>&lt;q&gt;</mark> representamos as aspas como se o texto tivesse sido citado</p>
+
+    <h2>Citações completas</h2>
+        <p>Segundo Jeff Noble em seu livro HTML, XHTML e CSS for DUMMIES:</p>
+            <blockqote cite ="https://www.google.com.br/books/edition/HTML_XHTML_and_CSS_For_Dummies/EGp9DgAAQBAJ?hl=pt-BR&gbpv=1&dq=HTML+XHTML+e+CSS+para+leigos&pg=PA62&printsec=frontcover">
+                A diferença entre documentos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+            </blockqote>
+        <p>Para citações completas utilizamos a tag <mark>&lt;blockqote&gt;</mark> em que diferente da citação simples, nessa o texto fica separado, parecido com um parágrafo. Podemos ainda , nessa tag acrescentarmos o parãmetro <mark><q>cite</q></mark> para citarmos a fonte, autor e etc... da citação.</p>
+    <h2>Abreviações</h2> 
+        <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Styles Sheets">CSS</abbr>. Estou adorando!</p> 
+        <p>Para abreviações usamos se a tag <mark>&lt;abbr&gt;</mark> na abreviação e ao passarmos o mouse aparece em um pequeno popup o significado.</p>  
+    <h2>Texto invertido</h2>
+        <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>   
+        <p>A tag que usamos para que um texto seja invertido é a tag <mark>&lt;bdo&gt;</mark> podendo ser alterada em <mark>rtl</mark> ou <mark>ltr</mark> </p>
+        
+
+</body>
+</html>

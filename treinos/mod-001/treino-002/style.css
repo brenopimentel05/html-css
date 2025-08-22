@@ -1,0 +1,30 @@
+img {
+    border-radius: 75px;
+    border: 3px solid;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+body {
+    background-color: slateblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+a {
+    background-color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    margin: 5px 200px 5px 200px;
+    color: slateblue;
+}
+
+p {
+    padding: 0 0 10px 0;
+}
