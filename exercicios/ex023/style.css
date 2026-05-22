@@ -7,8 +7,17 @@ body {
 table {
     border-collapse: collapse;
 }
+
 td {
     border: 1px solid black;
     padding: 5px;
     width: 100px;khtf
+}
+
+.principal {
+    background-color: yellow;
+}
+
+.star {
+    background-color: rgb(166, 166, 255);
 }
