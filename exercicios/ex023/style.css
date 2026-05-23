@@ -10,14 +10,13 @@ table {
 
 td {
     border: 1px solid black;
-    padding: 5px;
-    width: 100px;khtf
+    padding: 10px;
+    width: 100px;
+    text-align: center; /* Alinhamento horizontal */
+    vertical-align: middle; /* Alinhamento vertical */
 }
 
-.principal {
-    background-color: yellow;
-}
-
-.star {
-    background-color: rgb(166, 166, 255);
+.number {
+    text-align: end;
+    vertical-align: top;
 }
