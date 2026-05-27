@@ -15,10 +15,15 @@
 
         table {
             border-collapse: collapse;
+            position: relative;
         }
 
         thead {
             background-color: #adadad;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: #e0e0e0;
         }
 
         caption {
@@ -62,8 +67,8 @@
         </caption>
         <thead>
             <tr>
-                <th>Estado(Sudeste)</th>
-                <th>População</th>
+                <th scope="col">Estado(Sudeste)</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -177,7 +182,7 @@
             </tr>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>88 825 643</strong></td>
             </tr>
         </tfoot>
